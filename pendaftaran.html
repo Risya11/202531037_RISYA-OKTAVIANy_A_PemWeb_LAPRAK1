@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laprak 1 multimedia - pendaftaran</title>
+</head>
+<body>
+    <!-- navigasi -->
+    <nav>
+        <a href="beranda.html">Beranda</a> |
+        <a href="pendaftaran.html">Pendaftaran</a>
+    </nav>
+
+    <h2>Form Pendaftaran Praktikan</h2>
+
+    <form action="" method="post">
+        <table>
+            <!-- nama lengkap -->
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+
+            <!-- password -->
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" id="pass" name="password" required></td>
+            </tr>
+
+            <!-- NIM -->
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td><input type="number" id="nim" name="nim" required></td>
+            </tr>
+
+            <!-- tanggal lahir -->
+            <tr>
+                <td><label for="tgl">Tanggal Lahir</label></td>
+                <td><input type="date" id="tgl" name="tanggal_lahir" required></td>
+            </tr>
+
+            <!-- jenis kelamin -->
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <fieldset>
+                        <legend>Pilih salah satu</legend>
+                        <input type="radio" id="jk_l" name="jk" value="Laki-laki" required>
+                        <label for="jk_l">Laki-laki</label>
+                        <input type="radio" id="jk_p" name="jk" value="Perempuan" required>
+                        <label for="jk_p">Perempuan</label>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <!-- minat bidang -->
+            <tr>
+                <td>Minat dan Bidang</td>
+                <td>
+                    <fieldset>
+                        <legend>Boleh pilih lebih dari satu</legend>
+                        <input type="checkbox" id="web" name="minat[]" value="Web Development">
+                        <label for="web">Web Development</label>
+
+                        <input type="checkbox" id="jaringan" name="minat[]" value="Jaringan">
+                        <label for="jaringan">Jaringan</label>
+
+                        <input type="checkbox" id="design" name="minat[]" value="Design/Modeling">
+                        <label for="design">Design/Modeling</label>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <!-- program studi -->
+            <tr>
+                <td><label for="prodi">Program Studi</label></td>
+                <td>
+                    <select id="prodi" name="prodi">
+                        <option value="S1 Teknik Informatika">S1 Teknik Informatika</option>
+                        <option value="S1 Sistem Informasi">S1 Sistem Informasi</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- alasan mendaftar -->
+            <tr>
+                <td><label for="alasan">Alasan Mendaftar</label></td>
+                <td><textarea id="alasan" name="alasan" rows="4" cols="30"></textarea></td>
+            </tr>
+
+            <!-- tombol -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
